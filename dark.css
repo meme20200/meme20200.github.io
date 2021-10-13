@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Google Sans', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #000000d2;
+}
+.wrapper,
+.wrapper .img-area,
+.social-icons a,
+.buttons button{
+  background: #272d31b6;
+  box-shadow: -2px -2px 6px #1f1d1d,
+               3px 3px 5px #05050e4d;
+}
+.wrapper{
+  position: relative;
+  width: 350px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  object-fit: cover;
+  z-index: 1000;
+}
+.wrapper .icon{
+  font-size: 17px;
+  color: #dbe0e2;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.7;
+  top: 15px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+.wrapper .icon i{
+  position: relative;
+  z-index: 9;
+}
+.wrapper .icon.arrow{
+  left: 15px;
+}
+.wrapper .icon.dots{
+  right: 15px;
+}
+.wrapper .img-area{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-area .inner-area{
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  border-radius: 50%;
+}
+.inner-area img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.title {
+  font-size: 23px;
+  font-weight: 500;
+  color: #ffffff75;
+  margin: 10px 0 5px 0;
+}
+.details{
+  color: #7f7f86;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  text-size-adjust: auto;
+}
+
+.checkmark:before {
+  content: '\f185';
+  font-family: fontAwesome;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #141618c7;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2fa1ff;
+  border-radius: 50%;
+  box-shadow: inset -2px -2px 6px #080808,
+              inset 3px 3px 5px #040424;
+  line-height: 35px;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  color: black; 
+  border-radius: 5px;
+  background: #696969;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #808080; 
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
